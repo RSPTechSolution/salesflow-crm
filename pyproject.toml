@@ -12,4 +12,18 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pre-commit>=4.6.1",
+    "ruff>=0.16.0",
 ]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = [
+    "E", #Pycodestyle Errors
+    "F", #Pyflakes
+    "I", #isort
+    "UP", #pyupgrade
+]
+ignore = ["E501"]
