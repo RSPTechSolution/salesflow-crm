@@ -5,6 +5,9 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.egg-info/
+build/
+dist/
 
 # ===========================
 # Virtual Environment
@@ -36,10 +39,11 @@ staticfiles/
 Thumbs.db
 
 # ===========================
-# Testing
+# Testing & Coverage
 # ===========================
 .pytest_cache/
 .coverage
+coverage.xml
 htmlcov/
 
 # ===========================
@@ -52,4 +56,7 @@ htmlcov/
 # ===========================
 .mypy_cache/
 
-#test - pre-commit
+# ===========================
+# Logs
+# ===========================
+*.log
